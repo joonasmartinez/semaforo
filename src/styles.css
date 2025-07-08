@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.blinking-box {
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #eed813; /* azul */
+  }
+  100% {
+    background-color: #757575; /* vermelho */
+  }
+}
+
+.car-moving {
+  left: 0;
+  position: fixed;
+  animation: moving 2s infinite linear;
+}
+
+@keyframes moving {
+  0% {
+    left: 0vw;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+
+.car-moving-paused {
+  animation-play-state: paused;
+}
